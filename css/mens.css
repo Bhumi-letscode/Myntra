@@ -27,7 +27,7 @@
   margin-left: 50px;
   /* display: block; */
   /* float: left; */
-  width: 33%;
+  width: 50%;
   /* border: 1px solid red; */
   /* position: absolute; */
 }
@@ -45,6 +45,9 @@
 }
 .dropdown-content5:hover {
   border-bottom: 5px solid peachpuff;
+}
+.dropdown-content6:hover {
+  border-bottom: 5px solid rgb(10, 187, 119);
 }
 
 .dropdown-menu {
@@ -78,6 +81,9 @@
 }
 .dropdown-menu5 {
   left: 34%;
+}
+.dropdown-menu6 {
+  left: 40%;
 }
 .dropdown-menu ul li {
   margin-bottom: 10px;
@@ -241,7 +247,7 @@ body {
   height: 40px;
   align-items: center;
   justify-content: flex-start;
-  /* margin-left: 7%; */
+  margin-left: 7%;
   border-radius: 3px;
 }
 
