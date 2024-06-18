@@ -1,4 +1,4 @@
-##Myntra HackerRamp project
+## Myntra HackerRamp project
 
 Designing a mobile-friendly, minimalist frontend page inspired by Myntra, emphasizing Gen Z's authenticity, interactivity, and social engagement for growth.
 
