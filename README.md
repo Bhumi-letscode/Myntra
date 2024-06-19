@@ -6,7 +6,7 @@ Designing a minimalist frontend page inspired by Myntra, emphasizing Gen Z's aut
 
 In this project we have used the following technologies:
 
-- HTML
+- HTML hello
 - CSS
 - JavaScript
 
