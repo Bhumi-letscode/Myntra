@@ -1,3 +1,7 @@
+.genz img {
+  width: 10rem;
+  height: 200px;
+}
 .header {
     display: flex;
     height: 80px;
@@ -24,7 +28,8 @@
   }
   
   .categories {
-    margin-left: 50px;
+    margin-left: 270px;
+    margin-right: 0;
     /* display: block; */
     /* float: left; */
     width: 50%;
@@ -39,15 +44,6 @@
   }
   .dropdown-content3:hover {
     border-bottom: 5px solid orangered;
-  }
-  .dropdown-content4:hover {
-    border-bottom: 5px solid gold;
-  }
-  .dropdown-content5:hover {
-    border-bottom: 5px solid peachpuff;
-  }
-  .dropdown-content6:hover {
-    border-bottom: 5px solid rgb(10, 187, 119);
   }
   
   
@@ -76,15 +72,6 @@
   
   .dropdown-menu3 {
     left: 19.5%;
-  }
-  .dropdown-menu4 {
-    left: 26%;
-  }
-  .dropdown-menu5 {
-    left: 34%;
-  }
-  .dropdown-menu6 {
-    left: 40%;
   }
   .dropdown-menu ul li {
     margin-bottom: 10px;
@@ -117,10 +104,10 @@
   
   .header div ul li a {
     /* margin-right: 20px; */
-    padding: 28px 17px 28px;
+    padding: 28px 45px 28px;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 0.3px;
     color: #282c3f;
     /* border-bottom: none; */
@@ -247,7 +234,7 @@
     height: 40px;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 7%;
+    margin-left: 20px;
     border-radius: 3px;
   }
   
@@ -257,12 +244,14 @@
     width: 15px;
     /* border: 1px solid red; */
     margin: 15px;
+    margin-left: 0;
     opacity: 0.5;
   }
   .search-div input {
-    width: 70%;
+    font-size: 12px;
+    width: 100%;
     border: none;
-    margin-left: 2%;
+    margin-left: 0;
     background-color: #eee;
   }
   input:focus,
