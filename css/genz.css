@@ -1,6 +1,6 @@
-.genz img {
-  width: 10rem;
-  height: 200px;
+.genz {
+  
+
 }
 .header {
     display: flex;
@@ -28,7 +28,7 @@
   }
   
   .categories {
-    margin-left: 270px;
+    margin-left: 250px;
     margin-right: 0;
     /* display: block; */
     /* float: left; */
