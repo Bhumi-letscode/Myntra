@@ -127,7 +127,6 @@
   }
   body {
     font-family: Verdana, sans-serif;
-    /* background-color: rgb(248, 248, 248); */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
       Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
@@ -140,6 +139,7 @@
     max-width: 100%;
     position: relative;
     margin: 130px auto 0;
+    margin-top: 20px;
   }
   
   /* Next & previous buttons */
@@ -434,7 +434,153 @@
       width: 100%;
     }
   }
+<!-- influencer start -->
 
+@-webkit-keyframes scroll {
+	0% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	}
+	100% {
+	  -webkit-transform: translateX(calc(-250px * 7));
+			  transform: translateX(calc(-250px * 7));
+	}
+  }
+  
+  @keyframes scroll {
+	0% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	}
+	100% {
+	  -webkit-transform: translateX(calc(-250px * 7));
+			  transform: translateX(calc(-250px * 7));
+	}
+  }
+  .client-slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+	height: 100px;
+	margin: auto;
+  margin-top: 100px;
+	overflow: hidden;
+	position: relative;
+  }
+  .client-slider::before, .client-slider::after {
+	background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+	background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+	content: "";
+	height: 100px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+  }
+  .client-slider::after {
+	right: 0;
+	top: 0;
+	-webkit-transform: rotateZ(180deg);
+			transform: rotateZ(180deg);
+  }
+  .client-slider::before {
+	left: 0;
+	top: 0;
+  }
+  .client-slider .client-slide-track {
+	-webkit-animation: scroll 40s linear infinite;
+			animation: scroll 40s linear infinite;
+	display: -webkit-box;
+	display: flex;
+	width: calc(250px * 14);
+  }
+  .client-slider .client-slide {
+	height: 100px;
+	width: 250px;
+  }
+<!-- influencer_end -->
  
+<!-- men women -->
+* {
+  margin: 0; 
+padding: 0;
+}
+body {
+background: whitesmoke; 
+font-family: arial, verdana, tahoma;
+}
 
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+.accordianbox {
+}
+.accordian {
+width: 805px; height: 320px;
+overflow: hidden;
+
+/*Time for some styling*/
+margin: 100px auto;
+box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+width: 1200px;
+/*This will give ample space to the last item to move
+instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+position: relative;
+display: block;
+width: 160px;
+float: left;
+
+border-left: 1px solid #888;
+
+box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+
+/*Transitions to give animation effect*/
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+/*If you hover on the images now you should be able to 
+see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+display: block;
+}
+
+/*Image title styles*/
+.image_title {
+background: rgba(0, 0, 0, 0.5);
+position: absolute;
+left: 0; bottom: 0;	
+width: 640px;	
+
+}
+.image_title a {
+display: block;
+color: #fff;
+text-decoration: none;
+padding: 20px;
+font-size: 16px;
+}
+<!-- men women end -->
   
