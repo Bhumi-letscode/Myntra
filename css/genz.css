@@ -495,6 +495,10 @@
   .client-slider .client-slide {
 	height: 100px;
 	width: 250px;
+  text-align: center;
+  }
+  .inf{
+    font-size: 20;
   }
 <!-- influencer_end -->
  
@@ -519,7 +523,7 @@ default width = 800/5 = 160px;
 .accordianbox {
 }
 .accordian {
-width: 805px; height: 320px;
+width: 1000px; height: 400px;
 overflow: hidden;
 
 /*Time for some styling*/
